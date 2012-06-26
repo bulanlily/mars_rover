@@ -1,10 +1,10 @@
 class Rover
   DIRECTIONS = %w{W N E S}
-  attr_accessor :x, :y, :direction
+  attr_accessor :position, :direction, :plateau
 
-  def initialize (x, y, direction)
+  def initialize (position, direction)
     raise"Invalid Direction Input!" unless DIRECTIONS.include? direction
-    @x, @y, @direction=x, y, direction
+    @position, @direction=position, direction
   end
 
   def turn action
