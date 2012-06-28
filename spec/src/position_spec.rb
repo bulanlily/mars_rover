@@ -16,7 +16,6 @@ class PositionSpec
       it "should not be equal when x or y does not equal" do
         Position.new(2,2).should_not == Position.new(2,3)
       end
-
     end
   end
 end
