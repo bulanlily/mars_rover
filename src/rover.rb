@@ -14,8 +14,7 @@ class Rover
             DIRECTIONS.fetch(DIRECTIONS.index(direction)-1, DIRECTIONS[0])
           when 'R'
             DIRECTIONS.fetch(DIRECTIONS.index(direction)+1, DIRECTIONS[0])
-          else
-            raise "Invalid Action Command!"
+            else
         end
   end
 
@@ -26,6 +25,8 @@ class Rover
     if plateau.valid? new_position
       plateau.refresh_valid_positions(new_position, @position)
       @position = new_position
+    else
+      puts "GOT CONFLICT!"
     end
   end
 end

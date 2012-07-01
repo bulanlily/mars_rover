@@ -19,9 +19,6 @@ describe Rover do
       @rover.turn('R')
       @rover.direction.should == 'east'
     end
-    it "should raise an exception when get a invalid command" do
-      expect { @rover.turn('A') }.should raise_exception
-    end
   end
 
   describe :move do
