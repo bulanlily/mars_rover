@@ -1,0 +1,1 @@
+task :rspec do  sh 'rspec'end#namespace :rspec do#  #desc "run all unit tests"#  task :unit do#    sh 'rspec'#  end##  #desc "run all tests"#  task :all =>[:unit]#end
