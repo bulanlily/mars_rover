@@ -1,1 +1,0 @@
-[![Build Status](https://travis-ci.org/bulanlily/mars_rover.png?branch=master)](https://travis-ci.org/bulanlily/mars_rover)
