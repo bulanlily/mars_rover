@@ -1,1 +1,1 @@
-language: rubyrvm:  - 1.9.3  - 1.9.2  - jruby-18mode  - jruby-19mode  - rbx-18mode  - rbx-19mode  - ruby-head  - jruby-head  - 1.8.7  - reebefore_install: gem install bundler --prescript:  - rake --trace rspec
+language: rubyrvm:  - 1.9.3before_install: gem install bundler --prescript:  - bundle exec rake --trace rspec
